@@ -19,10 +19,9 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-      if message.content == 'ouo.test':
-        await client.send_message(message.channel,'TEST')
-      if message.content == 'ouo.globalemotetest':                           
-        await client.send_message(message.channel,':Clyde:')
+      if message.content.startswith('Hi'):
+          msg == 'Hello'.format(message)
+          await client.send_message(message.channel, msg)
         
 
 client.run('NTM4MTMxNzcyNTI1NzcyODAx.DyvXfA.t4B6oSElwAg-q9jjB23Jtb90-_g')
