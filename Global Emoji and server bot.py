@@ -17,11 +17,6 @@ async def on_ready():
     await client.change_presence(game=discord.Game(name="with 1 Server"))                               
     print('Ready, Freddy')
 
-node_modules/ :
-
-package-lock.json
-.idea/
-
 @client.event
 async def on_message(message):
       if message.content == 'ouo.test':
@@ -31,6 +26,3 @@ async def on_message(message):
         
 
 client.run('NTM4MTMxNzcyNTI1NzcyODAx.DyvXfA.t4B6oSElwAg-q9jjB23Jtb90-_g')
-
-
-
